@@ -1,0 +1,306 @@
+Analysis & Synthesis report for hw4
+Tue Dec 29 11:00:20 2015
+Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "four_byte_memory:comb_3|mux:comb_9"
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 29 11:00:20 2015    ;
+; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
+; Revision Name                      ; hw4                                      ;
+; Top-level Entity Name              ; hw4                                      ;
+; Family                             ; Cyclone IV E                             ;
+; Total logic elements               ; 13                                       ;
+;     Total combinational functions  ; 9                                        ;
+;     Dedicated logic registers      ; 4                                        ;
+; Total registers                    ; 4                                        ;
+; Total pins                         ; 21                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0                                        ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; hw4                ; hw4                ;
+; Family name                                                                ; Cyclone IV E       ; Stratix II         ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                     ;
++----------------------------------+-----------------+------------------------+------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ;
++----------------------------------+-----------------+------------------------+------------------------------+
+; hw4.v                            ; yes             ; User Verilog HDL File  ; D:/hw4/hw4.v                 ;
++----------------------------------+-----------------+------------------------+------------------------------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 13               ;
+;                                             ;                  ;
+; Total combinational functions               ; 9                ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 4                ;
+;     -- 3 input functions                    ; 1                ;
+;     -- <=2 input functions                  ; 4                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 9                ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 4                ;
+;     -- Dedicated logic registers            ; 4                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 21               ;
+; Maximum fan-out node                        ; address[1]~input ;
+; Maximum fan-out                             ; 6                ;
+; Total fan-out                               ; 57               ;
+; Average fan-out                             ; 1.04             ;
++---------------------------------------------+------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                      ;
++--------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+; |hw4                           ; 9 (0)             ; 4 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 21   ; 0            ; |hw4                                                            ;              ;
+;    |four_byte_memory:comb_3|   ; 9 (1)             ; 4 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3                                    ;              ;
+;       |demux:comb_4|           ; 6 (6)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|demux:comb_4                       ;              ;
+;       |mux:comb_9|             ; 2 (2)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|mux:comb_9                         ;              ;
+;       |one_byte_memory:comb_5| ; 0 (0)             ; 1 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_5             ;              ;
+;          |D_FF:comb_3|         ; 0 (0)             ; 1 (1)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_3 ;              ;
+;       |one_byte_memory:comb_6| ; 0 (0)             ; 1 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_6             ;              ;
+;          |D_FF:comb_3|         ; 0 (0)             ; 1 (1)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_3 ;              ;
+;       |one_byte_memory:comb_7| ; 0 (0)             ; 1 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_7             ;              ;
+;          |D_FF:comb_3|         ; 0 (0)             ; 1 (1)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_3 ;              ;
+;       |one_byte_memory:comb_8| ; 0 (0)             ; 1 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_8             ;              ;
+;          |D_FF:comb_3|         ; 0 (0)             ; 1 (1)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_3 ;              ;
++--------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 4     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "four_byte_memory:comb_3|mux:comb_9"                                                      ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out[7..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
+    Info: Processing started: Tue Dec 29 11:00:17 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hw4 -c hw4
+Warning: Entity "mux" obtained from "hw4.v" instead of from Quartus II megafunction library
+Info: Found 6 design units, including 6 entities, in source file hw4.v
+    Info: Found entity 1: hw4
+    Info: Found entity 2: mux
+    Info: Found entity 3: demux
+    Info: Found entity 4: D_FF
+    Info: Found entity 5: one_byte_memory
+    Info: Found entity 6: four_byte_memory
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(97): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(70): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(71): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(72): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(73): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(74): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(75): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(76): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(77): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(99): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(100): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(101): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(102): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(104): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at hw4.v(8): instance has no name
+Info: Elaborating entity "hw4" for the top level hierarchy
+Info: Elaborating entity "four_byte_memory" for hierarchy "four_byte_memory:comb_3"
+Warning (10739): Verilog HDL warning at hw4.v(106): actual bit length 8 differs from formal bit length 1
+Warning (10034): Output port "out[7..1]" at hw4.v(86) has no driver
+Info: Elaborating entity "demux" for hierarchy "four_byte_memory:comb_3|demux:comb_4"
+Warning (10235): Verilog HDL Always Construct warning at hw4.v(50): variable "clk_o0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info: Elaborating entity "one_byte_memory" for hierarchy "four_byte_memory:comb_3|one_byte_memory:comb_5"
+Info: Elaborating entity "D_FF" for hierarchy "four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_3"
+Info: Elaborating entity "mux" for hierarchy "four_byte_memory:comb_3|mux:comb_9"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out[1]" is stuck at GND
+    Warning (13410): Pin "out[2]" is stuck at GND
+    Warning (13410): Pin "out[3]" is stuck at GND
+    Warning (13410): Pin "out[4]" is stuck at GND
+    Warning (13410): Pin "out[5]" is stuck at GND
+    Warning (13410): Pin "out[6]" is stuck at GND
+    Warning (13410): Pin "out[7]" is stuck at GND
+Info: Timing-Driven Synthesis is running
+Info: Generating hard_block partition "hard_block:auto_generated_inst"
+Warning: Design contains 7 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "data[1]"
+    Warning (15610): No output dependent on input pin "data[2]"
+    Warning (15610): No output dependent on input pin "data[3]"
+    Warning (15610): No output dependent on input pin "data[4]"
+    Warning (15610): No output dependent on input pin "data[5]"
+    Warning (15610): No output dependent on input pin "data[6]"
+    Warning (15610): No output dependent on input pin "data[7]"
+Info: Implemented 34 device resources after synthesis - the final resource count might be different
+    Info: Implemented 13 input pins
+    Info: Implemented 8 output pins
+    Info: Implemented 13 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 278 megabytes
+    Info: Processing ended: Tue Dec 29 11:00:20 2015
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

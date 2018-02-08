@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at project.v(138): object "A" differs only in case from object "a" in the same scope
+Info (10281): Verilog HDL Declaration information at project.v(138): object "B" differs only in case from object "b" in the same scope
+Info (10281): Verilog HDL Declaration information at project.v(138): object "C" differs only in case from object "c" in the same scope
+Info (10281): Verilog HDL Declaration information at project.v(138): object "D" differs only in case from object "d" in the same scope

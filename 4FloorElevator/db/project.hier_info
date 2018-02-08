@@ -1,0 +1,82 @@
+|project
+calling_status[0] => calling_status[0].IN1
+calling_status[1] => calling_status[1].IN1
+door << startequal.DB_MAX_OUTPUT_PORT_TYPE
+enable => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+floor_status[0] << floor_status[0].DB_MAX_OUTPUT_PORT_TYPE
+floor_status[1] << floor_status[1].DB_MAX_OUTPUT_PORT_TYPE
+clk => clk.IN1
+a0 << segment:comb_17.port0
+a1 << segment:comb_17.port1
+a2 << segment:comb_17.port2
+a3 << segment:comb_17.port3
+a4 << segment:comb_17.port4
+a5 << segment:comb_17.port5
+a6 << segment:comb_17.port6
+
+
+|project|comparator:compare
+a[0] => Equal0.IN1
+a[0] => LessThan0.IN2
+a[0] => LessThan1.IN2
+a[1] => Equal0.IN0
+a[1] => LessThan0.IN1
+a[1] => LessThan1.IN1
+b[0] => Equal0.IN3
+b[0] => LessThan0.IN4
+b[0] => LessThan1.IN4
+b[1] => Equal0.IN2
+b[1] => LessThan0.IN3
+b[1] => LessThan1.IN3
+greater <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+lower <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project|countupdown:updown
+cd[0] <= cd[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cd[1] <= cd[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g => cd.OUTPUTSELECT
+g => cd.OUTPUTSELECT
+l => cd.OUTPUTSELECT
+l => cd.OUTPUTSELECT
+e => cd[1]~reg0.ENA
+e => cd[0]~reg0.ENA
+clk => cd[0]~reg0.CLK
+clk => cd[1]~reg0.CLK
+
+
+|project|segment:comb_17
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+A => a.IN0
+A => a.IN0
+A => e.IN0
+A => f.IN0
+B => a.IN1
+B => a.IN1
+B => e.IN0
+C => b.IN1
+C => c.IN1
+C => f.IN1
+C => a.IN1
+C => a.IN1
+C => e.IN1
+D => a.IN1
+D => b.IN1
+D => d.IN1
+D => e.IN1
+D => e.IN1
+D => f.IN1
+D => f.IN1
+D => a.IN1
+D => b.IN1
+D => c.IN1
+
+

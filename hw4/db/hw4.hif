@@ -1,0 +1,273 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+hw4
+# storage
+db|hw4.(0).cnf
+db|hw4.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw4.v
+c6b74bb85363c46f2c6cd9fd29d82c61
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+four_byte_memory
+# storage
+db|hw4.(1).cnf
+db|hw4.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw4.v
+c6b74bb85363c46f2c6cd9fd29d82c61
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+four_byte_memory:comb_3
+}
+# macro_sequence
+
+# end
+# entity
+demux
+# storage
+db|hw4.(2).cnf
+db|hw4.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw4.v
+c6b74bb85363c46f2c6cd9fd29d82c61
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+four_byte_memory:comb_3|demux:comb_4
+}
+# macro_sequence
+
+# end
+# entity
+one_byte_memory
+# storage
+db|hw4.(3).cnf
+db|hw4.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw4.v
+c6b74bb85363c46f2c6cd9fd29d82c61
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+four_byte_memory:comb_3|one_byte_memory:comb_5
+four_byte_memory:comb_3|one_byte_memory:comb_6
+four_byte_memory:comb_3|one_byte_memory:comb_7
+four_byte_memory:comb_3|one_byte_memory:comb_8
+}
+# macro_sequence
+
+# end
+# entity
+D_FF
+# storage
+db|hw4.(4).cnf
+db|hw4.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw4.v
+c6b74bb85363c46f2c6cd9fd29d82c61
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_3
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_4
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_5
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_6
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_7
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_8
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_9
+four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_10
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_3
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_4
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_5
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_6
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_7
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_8
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_9
+four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_10
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_3
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_4
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_5
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_6
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_7
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_8
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_9
+four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_10
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_3
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_4
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_5
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_6
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_7
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_8
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_9
+four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_10
+}
+# macro_sequence
+
+# end
+# entity
+mux
+# storage
+db|hw4.(5).cnf
+db|hw4.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw4.v
+c6b74bb85363c46f2c6cd9fd29d82c61
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+four_byte_memory:comb_3|mux:comb_9
+}
+# macro_sequence
+
+# end
+# complete
+

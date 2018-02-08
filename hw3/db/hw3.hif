@@ -1,0 +1,464 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+hw3
+# storage
+db|hw3.(0).cnf
+db|hw3.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw3.v
+17dd9cd3f42fdc98b6b013c95267
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+eight_bit_comparator
+# storage
+db|hw3.(1).cnf
+db|hw3.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw3.v
+17dd9cd3f42fdc98b6b013c95267
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+eight_bit_comparator:comb_3
+eight_bit_comparator:comb_4
+eight_bit_comparator:comb_5
+}
+# macro_sequence
+
+# end
+# entity
+two_bit_comparator
+# storage
+db|hw3.(2).cnf
+db|hw3.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw3.v
+17dd9cd3f42fdc98b6b013c95267
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6
+}
+# macro_sequence
+
+# end
+# entity
+grater_comparator
+# storage
+db|hw3.(3).cnf
+db|hw3.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw3.v
+17dd9cd3f42fdc98b6b013c95267
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5
+}
+# macro_sequence
+
+# end
+# entity
+multiplexer
+# storage
+db|hw3.(4).cnf
+db|hw3.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw3.v
+17dd9cd3f42fdc98b6b013c95267
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_3
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_4
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_5
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_6
+}
+# macro_sequence
+
+# end
+# entity
+equal_comparator
+# storage
+db|hw3.(5).cnf
+db|hw3.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw3.v
+17dd9cd3f42fdc98b6b013c95267
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6
+}
+# macro_sequence
+
+# end
+# entity
+less_comparator
+# storage
+db|hw3.(6).cnf
+db|hw3.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw3.v
+17dd9cd3f42fdc98b6b013c95267
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7
+eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7
+eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7
+eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7
+eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7
+eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7
+eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7
+eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7
+eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7
+eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7
+eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7
+eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7
+}
+# macro_sequence
+
+# end
+# complete
+

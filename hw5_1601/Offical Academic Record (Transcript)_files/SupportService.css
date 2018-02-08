@@ -1,0 +1,28 @@
+﻿iframe.support{border:medium none;width:100%}
+#support-overlay{background:none repeat scroll 0 0 #000;top:0;left:0;bottom:0;right:0;overflow:hidden;z-index:8010;cursor:pointer;display:block;opacity:0.8;position:fixed}
+#support-modal *,#support-modal :before,#support-modal :after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+#support-modal{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;display:block;height:auto;margin-left:30%;opacity:1;position:fixed;top:0;width:40%;z-index:9999;background:none repeat scroll 0 0 #fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;color:#333;padding:10px}
+#support-modal h3{font-size: 1.3em;}
+#support-modal .alert{background-color:#FCF8E3;border:1px solid #FBEED5;border-radius:4px;margin-bottom:20px;text-shadow:0 1px 0 rgba(255,255,255,0.5);padding:8px 35px 8px 14px}
+#support-modal .alert-success{background-color:#DFF0D8;color:#468847;border-color:#D6E9C6}
+#support-modal .alert-error{background-color:#F2DEDE;color:#B94A48;border-color:#EED3D7}
+#support-modal .close-modal{color:#AAA;cursor:pointer;font-size:1.375em;font-weight:700;line-height:1;position:absolute;right:.6875em;top:.5em}
+#support-modal .container{margin-top:15px;margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px;width:100%}
+#support-modal form .btnLogin{text-align:right;margin:10px 0}
+#support-modal form button{-moz-user-select:none;background-image:none;color:#000;background-color:rgb(240, 240, 240);border:1px solid rgba(0,0,0,0);border-radius:4px;cursor:pointer;display:inline-block;font-size:14px;font-weight:400;line-height:1.42857;margin-bottom:0;text-align:center;vertical-align:middle;white-space:nowrap;padding:6px 12px}
+#support-modal form button.btn-default{background-color:#FFF;color:#333;border-color:#CCC}
+#support-modal form .form-group{display:table;width:100%;margin-bottom:15px}
+#support-modal form .form-group.sp-error{color:#B94A48}
+#support-modal form .form-group .control-label{font-size:14px;text-align:right;padding-right:3%;float:left;width:17%;font-weight:700;margin-bottom:0;margin-top:0;padding-top:7px;min-height:1px;position:relative}
+#support-modal form .form-group .control-div{float:left;width:80%}
+#support-modal form #pScreenShot.form-group .control-div *{float:left}
+#support-modal form .form-group .control-div > input,#support-modal form .form-group .control-div > textarea,#support-modal form .form-group .control-div > select{width:100%;background-color:#FFF;background-image:none;border:1px solid #CCC;border-radius:4px;box-shadow:0 1px 1px rgba(0,0,0,0.075) inset;color:#555;display:block;font-size:12px;line-height:1.42857;transition:border-color .15s ease-in-out 0, box-shadow .15s ease-in-out 0;vertical-align:middle;padding:6px;margin:0;}
+#support-modal select > option { margin-left: 5px; }
+#support-modal form .form-group .control-div > input[type=text],#support-modal form .form-group .control-div > input[type=email]{height:34px;margin:0;}
+#support-modal form .form-group .control-div > input[type=checkbox]{width:20px;border:none;float:left;margin:0;}
+#support-modal form .form-group .control-div > input[type=file]{border:none;box-shadow:none;width:auto;cursor:pointer;padding:6px 0;margin:0;}
+#support-modal form .form-group.sp-error .control-label {color:#B94A48 !important}
+@media (max-width: 1024px){#support-modal{margin-left:20%;width:60%}}
+@media (max-width: 768px){#support-modal{margin-left:4%;width:85%}}
+@media (max-width: 480px){#support-modal{margin-left:0;width:100%;left:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0} #support-modal .close-modal{right:1.6875em}}
+@media (max-width: 565px){#support-modal form .form-group .control-label{text-align:left;float:none} #support-modal form .form-group .control-div{float:none;width:95%}}

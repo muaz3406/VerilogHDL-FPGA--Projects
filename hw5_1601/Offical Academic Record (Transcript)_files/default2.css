@@ -1,0 +1,236 @@
+﻿@import "jquery-ui-1.10.3.custom.min.css";
+
+body *
+{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+body
+{
+    font-family: "segoe ui" , Tahoma, Verdana, Century Gothic;
+    color: #020202;
+    background-color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+/*Begin: Bu kısım mesaj göstermek iiçin kullanılan htmlin style idir....*/
+.error
+{
+    margin: auto;
+    font-family: tahoma;
+    border: solid 1px #FF0000;
+    padding: 5px;
+    color: #020202;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FFE3E0;
+}
+.info
+{
+    background-repeat: repeat-x;
+    background-color: #62D9A0;
+    border: solid 1px #00743C;
+    line-height: 22px;
+    display: block;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #020202;
+}
+.warning
+{
+    background-repeat: repeat-x;
+    background-color: #FFFFCC;
+    border: solid 1px #FF9400;
+    line-height: 22px;
+    display: block;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #020202;
+}
+
+.spanTip
+{
+    cursor: default;
+    display: none;
+}
+td.tdError:hover span, td.tdWarning:hover span, td.tdInfo:hover span
+{
+    display: block;
+    z-index: 100;
+    position: fixed;
+    width: auto;
+    padding: 3px 7px 4px 6px;
+    border: 1px solid #336;
+    background-color: #f7f7ee;
+    font: normal 0.9em/1.2em arial, helvetica, sans-serif;
+    text-align: left;
+    color: #000;
+    cursor: hand;
+    right: 30px;
+}
+td.tdError:hover
+{
+    width: 7px;
+    height: 7px;
+}
+td.tdWarning:hover
+{
+    width: 7px;
+    height: 7px;
+}
+td.tdInfo:hover
+{
+    width: 7px;
+    height: 7px;
+}
+.tdError
+{
+    border: solid 1px #020202;
+    width: 3px;
+    height: 3px;
+    background-color: #FFE3E0;
+}
+.tdInfo
+{
+    border: solid 1px #020202;
+    width: 3px;
+    height: 3px;
+    background-color: #62D9A0;
+}
+.tdWarning
+{
+    border: solid 1px #020202;
+    width: 3px;
+    height: 3px;
+    background-color: #FFFFCC;
+}
+/*End :Bu kısım mesaj göstermek iiçin kullanılan htmlin style idir....*/
+a
+{
+    color: Blue;
+}
+a:link, a:visited, a:active
+{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+/*Dashboard style...*/
+
+form fieldset
+{
+    border-width: 1px 1px 1px 3px;
+    border-style: solid;
+    border-color: #9DB6C5;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    margin: 2px 2px 2px 2px;
+    padding: 0 5px 5px 3px;
+    background-color: #FDFDFD;
+}
+form fieldset legend
+{
+    font-family: Tahoma, Verdana;
+    background-color: #F1FBFE;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: #9DB6C5;
+    color: Navy;
+    font-size: 90%;
+    padding: 2px 3px 2px 3px;
+    margin: 0;
+}
+.appHeader, .appFooter
+{
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: 33px;
+    background-image: url(Images/header_bg.png);
+    background-repeat: repeat-x;
+    color:  White;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 5px 0 0;
+}
+.appHeader *
+{
+    font-size: 16px;
+}
+.appFooter
+{
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+.multipage
+{
+    border: solid 1px Gray;
+}
+
+/*Yeni görünüm uygulandıktan sonra buradan aşagı olan tüm css ler kaldırılcak */
+.appheaderpopupcontent
+{
+    color: Black;
+    font-size: 5px;
+    width: 300px;
+    z-index: 100000;
+}
+.appheaderhelp
+{
+    float: left;
+}
+.appheaderhelp img
+{
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+.appheaderhelp img:hover
+{
+    background: none repeat scroll 0 0 #FFF;
+    cursor: pointer;
+}
+.appheaderhelp .appheaderpopup
+{
+    background: none repeat scroll 0 0 #FFF;
+    border: 1px solid #878787;
+    float: right;
+    left: -9999em;
+    margin-top: 14px;
+    padding: 10px;
+    position: absolute;
+    width: 300px;
+    z-index: 9999;
+    height: 300px;
+}
+.appheaderhelp .appheaderpopup:hover, .appheaderhelp:hover .appheaderpopup
+{
+    background: none repeat scroll 0 0 #FFF;
+    left: auto;
+}
+.appheaderhelp .appheaderpopup ul, .appheaderhelp .appheaderpopup ol, .appheaderhelp .appheaderpopup li
+{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.appheaderrounded, .appheaderrounded a, .appheaderrounded span, .button, .button a, .button span
+{
+    border-radius: 6px 6px 6px 6px;
+    font-size: 12px;
+}
+.appheaderhelp .appheaderpopup strong
+{
+    font-size: 12px;
+}
+/*Yeni görünüm uygulandıktan sonra buradan aşagı olan tüm css ler kaldırılcak */

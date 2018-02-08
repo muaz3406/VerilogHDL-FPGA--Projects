@@ -1,0 +1,214 @@
+|hw5
+out[0] <= out[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5].DB_MAX_OUTPUT_PORT_TYPE
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+s => s.IN1
+clk => _.IN1
+clk => _.IN1
+clk => _.IN1
+multiplier[0] => multiplier[0].IN1
+multiplier[1] => multiplier[1].IN1
+multiplicand[0] => multiplicand[0].IN1
+multiplicand[1] => multiplicand[1].IN1
+multiplicand[2] => multiplicand[2].IN1
+multiplicand[3] => multiplicand[3].IN1
+
+
+|hw5|binary_adder:comb_3
+sum[0] <= half_adder:comb_3.port2
+sum[1] <= full_adder:comb_4.port0
+sum[2] <= full_adder:comb_5.port0
+sum[3] <= full_adder:comb_6.port0
+sum[4] <= half_adder:comb_7.port2
+sum[5] <= half_adder:comb_8.port2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+
+
+|hw5|binary_adder:comb_3|half_adder:comb_3
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_4
+s <= half_adder:hay.port2
+co <= comb.DB_MAX_OUTPUT_PORT_TYPE
+x => x.IN1
+y => y.IN1
+ci => ci.IN1
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_4|half_adder:hax
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_4|half_adder:hay
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_5
+s <= half_adder:hay.port2
+co <= comb.DB_MAX_OUTPUT_PORT_TYPE
+x => x.IN1
+y => y.IN1
+ci => ci.IN1
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_5|half_adder:hax
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_5|half_adder:hay
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_6
+s <= half_adder:hay.port2
+co <= comb.DB_MAX_OUTPUT_PORT_TYPE
+x => x.IN1
+y => y.IN1
+ci => ci.IN1
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_6|half_adder:hax
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|full_adder:comb_6|half_adder:hay
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|half_adder:comb_7
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|binary_adder:comb_3|half_adder:comb_8
+x => comb.IN0
+x => comb.IN0
+y => comb.IN1
+y => comb.IN1
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|hw5|PR:comb_4
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+Clk => Q[0]~reg0.CLK
+Clk => Q[1]~reg0.CLK
+Clk => Q[2]~reg0.CLK
+Clk => Q[3]~reg0.CLK
+Clk => Q[4]~reg0.CLK
+Clk => Q[5]~reg0.CLK
+rst => Q[0]~reg0.ACLR
+rst => Q[1]~reg0.ACLR
+rst => Q[2]~reg0.ACLR
+rst => Q[3]~reg0.ACLR
+rst => Q[4]~reg0.ACLR
+rst => Q[5]~reg0.ACLR
+
+
+|hw5|binary_counter:comb_8
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+
+
+|hw5|isEqual:comb_12
+eq <= eq.DB_MAX_OUTPUT_PORT_TYPE
+m[0] => eq.IN0
+m[0] => eq.IN0
+m[1] => eq.IN0
+m[1] => eq.IN0
+c[0] => eq.IN1
+c[0] => eq.IN1
+c[1] => eq.IN1
+c[1] => eq.IN1
+
+
+|hw5|state_m:comb_13
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+z => da.IN1
+s => db.IN1
+s => r.IN1
+clk => clk.IN2
+
+
+|hw5|state_m:comb_13|ffd:a
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+
+
+|hw5|state_m:comb_13|ffd:b
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+rst => Q~reg0.ACLR
+
+

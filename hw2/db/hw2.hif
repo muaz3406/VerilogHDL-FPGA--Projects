@@ -1,0 +1,182 @@
+Quartus II
+Version 10.0 Build 218 06/27/2010 SJ Web Edition
+13
+1247
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+hw2
+# storage
+db|hw2.(0).cnf
+db|hw2.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw2.v
+34fb5760b68927bfdd7f1280c01a5de3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+four_bit_adder
+# storage
+db|hw2.(1).cnf
+db|hw2.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw2.v
+34fb5760b68927bfdd7f1280c01a5de3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+four_bit_adder:comb_3
+four_bit_adder:comb_4
+four_bit_adder:comb_5
+}
+# macro_sequence
+
+# end
+# entity
+half_adder
+# storage
+db|hw2.(2).cnf
+db|hw2.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw2.v
+34fb5760b68927bfdd7f1280c01a5de3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+four_bit_adder:comb_3|half_adder:comb_3
+four_bit_adder:comb_3|half_adder:comb_4
+four_bit_adder:comb_3|half_adder:comb_5
+four_bit_adder:comb_3|half_adder:comb_6
+four_bit_adder:comb_4|half_adder:comb_3
+four_bit_adder:comb_4|half_adder:comb_4
+four_bit_adder:comb_4|half_adder:comb_5
+four_bit_adder:comb_4|half_adder:comb_6
+four_bit_adder:comb_5|half_adder:comb_3
+four_bit_adder:comb_5|half_adder:comb_4
+four_bit_adder:comb_5|half_adder:comb_5
+four_bit_adder:comb_5|half_adder:comb_6
+}
+# macro_sequence
+
+# end
+# entity
+segment
+# storage
+db|hw2.(3).cnf
+db|hw2.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hw2.v
+34fb5760b68927bfdd7f1280c01a5de3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+segment:comb_6
+segment:comb_7
+segment:comb_8
+}
+# macro_sequence
+
+# end
+# complete
+

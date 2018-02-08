@@ -1,0 +1,394 @@
+|hw4
+out[0] <= four_byte_memory:comb_3.port0
+out[1] <= four_byte_memory:comb_3.port0
+out[2] <= four_byte_memory:comb_3.port0
+out[3] <= four_byte_memory:comb_3.port0
+out[4] <= four_byte_memory:comb_3.port0
+out[5] <= four_byte_memory:comb_3.port0
+out[6] <= four_byte_memory:comb_3.port0
+out[7] <= four_byte_memory:comb_3.port0
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+en => en.IN1
+wr => wr.IN1
+clk => clk.IN1
+
+
+|hw4|four_byte_memory:comb_3
+out[0] <= WideAnd1.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= <GND>
+out[2] <= <GND>
+out[3] <= <GND>
+out[4] <= <GND>
+out[5] <= <GND>
+out[6] <= <GND>
+out[7] <= <GND>
+address[0] => address[0].IN2
+address[1] => address[1].IN2
+data[0] => data[0].IN4
+data[1] => data[1].IN4
+data[2] => data[2].IN4
+data[3] => data[3].IN4
+data[4] => data[4].IN4
+data[5] => data[5].IN4
+data[6] => data[6].IN4
+data[7] => data[7].IN4
+en => WideAnd0.IN0
+en => WideAnd1.IN1
+wr => WideAnd0.IN1
+wr => WideAnd1.IN2
+clk => WideAnd0.IN2
+
+
+|hw4|four_byte_memory:comb_3|demux:comb_4
+clk_o[0] <= clk_o.DB_MAX_OUTPUT_PORT_TYPE
+clk_o[1] <= clk_o.DB_MAX_OUTPUT_PORT_TYPE
+clk_o[2] <= clk_o.DB_MAX_OUTPUT_PORT_TYPE
+clk_o[3] <= clk_o.DB_MAX_OUTPUT_PORT_TYPE
+clk_in => clk_o.OUTPUTSELECT
+clk_in => clk_o.OUTPUTSELECT
+clk_in => clk_o.OUTPUTSELECT
+clk_in => clk_o.OUTPUTSELECT
+address[0] => Decoder0.IN1
+address[1] => Decoder0.IN0
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5
+dout[0] <= D_FF:comb_3.port0
+dout[1] <= D_FF:comb_4.port0
+dout[2] <= D_FF:comb_5.port0
+dout[3] <= D_FF:comb_6.port0
+dout[4] <= D_FF:comb_7.port0
+dout[5] <= D_FF:comb_8.port0
+dout[6] <= D_FF:comb_9.port0
+dout[7] <= D_FF:comb_10.port0
+din[0] => din[0].IN1
+din[1] => din[1].IN1
+din[2] => din[2].IN1
+din[3] => din[3].IN1
+din[4] => din[4].IN1
+din[5] => din[5].IN1
+din[6] => din[6].IN1
+din[7] => din[7].IN1
+clk => clk.IN8
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_3
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_4
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_5
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_6
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_7
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_8
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_9
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_5|D_FF:comb_10
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6
+dout[0] <= D_FF:comb_3.port0
+dout[1] <= D_FF:comb_4.port0
+dout[2] <= D_FF:comb_5.port0
+dout[3] <= D_FF:comb_6.port0
+dout[4] <= D_FF:comb_7.port0
+dout[5] <= D_FF:comb_8.port0
+dout[6] <= D_FF:comb_9.port0
+dout[7] <= D_FF:comb_10.port0
+din[0] => din[0].IN1
+din[1] => din[1].IN1
+din[2] => din[2].IN1
+din[3] => din[3].IN1
+din[4] => din[4].IN1
+din[5] => din[5].IN1
+din[6] => din[6].IN1
+din[7] => din[7].IN1
+clk => clk.IN8
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_3
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_4
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_5
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_6
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_7
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_8
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_9
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_6|D_FF:comb_10
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7
+dout[0] <= D_FF:comb_3.port0
+dout[1] <= D_FF:comb_4.port0
+dout[2] <= D_FF:comb_5.port0
+dout[3] <= D_FF:comb_6.port0
+dout[4] <= D_FF:comb_7.port0
+dout[5] <= D_FF:comb_8.port0
+dout[6] <= D_FF:comb_9.port0
+dout[7] <= D_FF:comb_10.port0
+din[0] => din[0].IN1
+din[1] => din[1].IN1
+din[2] => din[2].IN1
+din[3] => din[3].IN1
+din[4] => din[4].IN1
+din[5] => din[5].IN1
+din[6] => din[6].IN1
+din[7] => din[7].IN1
+clk => clk.IN8
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_3
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_4
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_5
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_6
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_7
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_8
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_9
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_7|D_FF:comb_10
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8
+dout[0] <= D_FF:comb_3.port0
+dout[1] <= D_FF:comb_4.port0
+dout[2] <= D_FF:comb_5.port0
+dout[3] <= D_FF:comb_6.port0
+dout[4] <= D_FF:comb_7.port0
+dout[5] <= D_FF:comb_8.port0
+dout[6] <= D_FF:comb_9.port0
+dout[7] <= D_FF:comb_10.port0
+din[0] => din[0].IN1
+din[1] => din[1].IN1
+din[2] => din[2].IN1
+din[3] => din[3].IN1
+din[4] => din[4].IN1
+din[5] => din[5].IN1
+din[6] => din[6].IN1
+din[7] => din[7].IN1
+clk => clk.IN8
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_3
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_4
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_5
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_6
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_7
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_8
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_9
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|one_byte_memory:comb_8|D_FF:comb_10
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+
+
+|hw4|four_byte_memory:comb_3|mux:comb_9
+out[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+I0[0] => Mux7.IN0
+I0[1] => Mux6.IN0
+I0[2] => Mux5.IN0
+I0[3] => Mux4.IN0
+I0[4] => Mux3.IN0
+I0[5] => Mux2.IN0
+I0[6] => Mux1.IN0
+I0[7] => Mux0.IN0
+I1[0] => Mux7.IN1
+I1[1] => Mux6.IN1
+I1[2] => Mux5.IN1
+I1[3] => Mux4.IN1
+I1[4] => Mux3.IN1
+I1[5] => Mux2.IN1
+I1[6] => Mux1.IN1
+I1[7] => Mux0.IN1
+I2[0] => Mux7.IN2
+I2[1] => Mux6.IN2
+I2[2] => Mux5.IN2
+I2[3] => Mux4.IN2
+I2[4] => Mux3.IN2
+I2[5] => Mux2.IN2
+I2[6] => Mux1.IN2
+I2[7] => Mux0.IN2
+I3[0] => Mux7.IN3
+I3[1] => Mux6.IN3
+I3[2] => Mux5.IN3
+I3[3] => Mux4.IN3
+I3[4] => Mux3.IN3
+I3[5] => Mux2.IN3
+I3[6] => Mux1.IN3
+I3[7] => Mux0.IN3
+sel[0] => Mux0.IN5
+sel[0] => Mux1.IN5
+sel[0] => Mux2.IN5
+sel[0] => Mux3.IN5
+sel[0] => Mux4.IN5
+sel[0] => Mux5.IN5
+sel[0] => Mux6.IN5
+sel[0] => Mux7.IN5
+sel[1] => Mux0.IN4
+sel[1] => Mux1.IN4
+sel[1] => Mux2.IN4
+sel[1] => Mux3.IN4
+sel[1] => Mux4.IN4
+sel[1] => Mux5.IN4
+sel[1] => Mux6.IN4
+sel[1] => Mux7.IN4
+
+

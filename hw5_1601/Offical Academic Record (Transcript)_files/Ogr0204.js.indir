@@ -1,0 +1,13 @@
+﻿function GetRadWindow() {
+    var oWindow = null;
+    if (window.radWindow) oWindow = window.radWindow;
+    else if (window.frameElement.radWindow) oWindow = window.frameElement.radWindow;
+    return oWindow;
+}
+
+function PencereKapat() {
+    var obj = $find('pnl01');
+    if (obj) {
+        obj.ajaxRequest('Guncelle');
+    }
+}

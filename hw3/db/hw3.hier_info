@@ -1,0 +1,3072 @@
+|hw3
+a <= num1.DB_MAX_OUTPUT_PORT_TYPE
+b <= <GND>
+c <= num2.DB_MAX_OUTPUT_PORT_TYPE
+d <= num1.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+i0 => i0.IN3
+i1 => i1.IN3
+i2 => i2.IN3
+i3 => i3.IN3
+i4 => i4.IN3
+i5 => i5.IN3
+i6 => i6.IN3
+i7 => i7.IN3
+
+
+|hw3|eight_bit_comparator:comb_3
+G <= two_bit_comparator:comb_6.port0
+E <= two_bit_comparator:comb_6.port1
+L <= two_bit_comparator:comb_6.port2
+a0 => a0.IN1
+a1 => a1.IN1
+a2 => a2.IN1
+a3 => a3.IN1
+a4 => a4.IN1
+a5 => a5.IN1
+a6 => a6.IN1
+a7 => a7.IN1
+b7 => b7.IN1
+b6 => b6.IN1
+b5 => b5.IN1
+b4 => b4.IN1
+b3 => b3.IN1
+b2 => b2.IN1
+b1 => b1.IN1
+b0 => b0.IN1
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_3|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4
+G <= two_bit_comparator:comb_6.port0
+E <= two_bit_comparator:comb_6.port1
+L <= two_bit_comparator:comb_6.port2
+a0 => a0.IN1
+a1 => a1.IN1
+a2 => a2.IN1
+a3 => a3.IN1
+a4 => a4.IN1
+a5 => a5.IN1
+a6 => a6.IN1
+a7 => a7.IN1
+b7 => b7.IN1
+b6 => b6.IN1
+b5 => b5.IN1
+b4 => b4.IN1
+b3 => b3.IN1
+b2 => b2.IN1
+b1 => b1.IN1
+b0 => b0.IN1
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_4|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5
+G <= two_bit_comparator:comb_6.port0
+E <= two_bit_comparator:comb_6.port1
+L <= two_bit_comparator:comb_6.port2
+a0 => a0.IN1
+a1 => a1.IN1
+a2 => a2.IN1
+a3 => a3.IN1
+a4 => a4.IN1
+a5 => a5.IN1
+a6 => a6.IN1
+a7 => a7.IN1
+b7 => b7.IN1
+b6 => b6.IN1
+b5 => b5.IN1
+b4 => b4.IN1
+b3 => b3.IN1
+b2 => b2.IN1
+b1 => b1.IN1
+b0 => b0.IN1
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_3|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_4|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_5|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6
+G <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E <= comb.DB_MAX_OUTPUT_PORT_TYPE
+L <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a1 => a1.IN3
+a0 => a0.IN3
+b1 => b1.IN3
+b0 => b0.IN3
+Ig => comb.IN1
+Ig => l1.IN1
+Ie => comb.IN1
+Il => comb.IN1
+Il => g1.IN1
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|grater_comparator:comb_5|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|equal_comparator:comb_6|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a1 => f.IN0
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+a0 => f.IN1
+b1 => b1.IN4
+b0 => b0.IN4
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_4
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_5
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
+|hw3|eight_bit_comparator:comb_5|two_bit_comparator:comb_6|less_comparator:comb_7|multiplexer:comb_6
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+d0 => WideAnd0.IN0
+d1 => WideAnd1.IN0
+d2 => WideAnd2.IN0
+d3 => WideAnd3.IN0
+b1 => WideAnd2.IN1
+b1 => WideAnd3.IN1
+b1 => WideAnd0.IN1
+b1 => WideAnd1.IN1
+b0 => WideAnd1.IN2
+b0 => WideAnd3.IN2
+b0 => WideAnd0.IN2
+b0 => WideAnd2.IN2
+
+
